@@ -1,7 +1,19 @@
 #skills {
     .skills-list {
         .skills-list-item {
-            .skill-list-item__title {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            padding: 0 20px;
+
+            @media only screen and (min-width: $cut) {
+                margin-top: 0;
+                padding: 0;
+            }
+
+            &__title {
+                margin-top: 0;
+                padding-top: 0;
+
                 text-align: center;
 
                 @media only screen and (min-width: $cut) {
@@ -9,12 +21,24 @@
                 }
             }
 
-            .icon {
-                font-size: 75px;
+            &__icons {
+                text-align: center;
 
-                display: inline-block;
+                @media only screen and (min-width: $cut) {
+                    text-align: left;
+                }
 
-                margin: 0 40px 20px 0;
+                .icon {
+                    font-size: 75px;
+
+                    display: inline-block;
+
+                    margin: 10px;
+
+                    @media only screen and (min-width: $cut) {
+                        margin: 0 40px 20px 0;
+                    }
+                }
             }
         }
     }
