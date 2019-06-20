@@ -125,7 +125,7 @@
     cursor: pointer;
     text-align: center;
 
-    color: $header__down-arrow__font-color;
+
 
     .icon {
         position: absolute;
@@ -139,6 +139,8 @@
         transform: translate(-50%, -50%);
         -webkit-animation: pulse 1.3s infinite;
         animation: pulse 1.3s infinite;
+
+        color: $header__down-arrow__font-color;
 
         -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
