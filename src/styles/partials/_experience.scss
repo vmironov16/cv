@@ -1,86 +1,82 @@
-#experience
-{
-    ul.timeline
-    {
+#experience {
+    .timeline-list {
         position: relative;
 
         list-style-type: none;
-    }
 
-    ul.timeline:before
-    {
-        position: absolute;
-        z-index: 400;
-        left: 29px;
-
-        display: inline-block;
-
-        width: 2px;
-        height: 100%;
-
-        content: ' ';
-
-        background: $timeline__line-color;
-    }
-
-    ul.timeline > li
-    {
-        margin: 20px 0;
-        padding-left: 20px;
-        transition: 300ms;
-
-        h2
-        {
-            font-size: $timeline__li__h2__font-size;
-        }
-
-        h3
-        {
-            font-size: $timeline__li__h3__font-size;
-        }
-
-        h2,
-        h3
-        {
-            margin: 0;
-        }
-
-        p
-        {
-            span
-            {
-                @extend .bold;
-            }
-        }
-
-        &:before
-        {
+        &:before {
             position: absolute;
             z-index: 400;
-            left: 20px;
+            left: 29px;
 
             display: inline-block;
 
-            width: 20px;
-            height: 20px;
+            width: 2px;
+            height: 100%;
 
             content: ' ';
-            border-color:$timeline__point-color;
-            border-width: $timeline__li__h2__point-border-width;
-            border-style: solid;
-            border-radius: 50%;
-            background: white;
-            transition: 250ms;
+
+            background: $timeline-list__line-color;
         }
 
-        &:hover{
-            padding-left: 30px;
-            h2{
-                color: $timeline__li__h2__font-color--hover;
+        &-item {
+            margin: 20px 0;
+            padding-left: 20px;
+
+            transition: 300ms;
+
+            .timeline-list-item__title,
+            .timeline-list-item__lasting {
+                margin: 0;
             }
-            &:before{
-                border-color: $timeline__li__h2__point-color--hover;
-                border-width: $timeline__li__h2__point-border-width--hover;
+
+            .timeline-list-item__title {
+                font-size: $timeline-list-item__title__font-size;
+            }
+
+            .timeline-list-item__lasting {
+                font-size: $timeline-list-item__lasting__font-size;
+            }
+
+
+
+            p {
+                span {
+                    @extend .bold;
+                }
+            }
+
+            &:before {
+                position: absolute;
+                z-index: 400;
+                left: 20px;
+
+                display: inline-block;
+
+                width: 20px;
+                height: 20px;
+
+                content: ' ';
+                transition: 250ms;
+
+                border-width: $timeline-list__point-border-width;
+                border-style: solid;
+                border-color: $timeline-list__point-color;
+                border-radius: 50%;
+                background: white;
+            }
+
+            &:hover {
+                padding-left: 30px;
+
+                .timeline-list-item__title {
+                    color: $timeline-list-item__title__font-color--hover;
+                }
+
+                &:before {
+                    border-width: $timeline-list-item__point-border-width--hover;
+                    border-color: $timeline-list-item__point-color--hover;
+                }
             }
         }
     }

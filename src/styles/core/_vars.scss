@@ -96,15 +96,17 @@ $form__el__border-radius--focus: 5px;
 $form__el__padding--focus: 15px 10px;
 
 //Timeline
-$timeline__line-color: $default-color;
-$timeline__point-color: $main-color;
-$timeline__li__h2__font-size: 24px;
-$timeline__li__h3__font-size: 20px;
-$timeline__li__h2__point-border-width: 3px;
+$timeline-list__line-color: $default-color;
+$timeline-list__point-color: $main-color;
 
-$timeline__li__h2__font-color--hover: $accent-color;
-$timeline__li__h2__point-color--hover: $timeline__li__h2__font-color--hover;
-$timeline__li__h2__point-border-width--hover: 4px;
+$timeline-list-item__title__font-size: 24px;
+$timeline-list-item__lasting__font-size: 20px;
+
+$timeline-list__point-border-width: 3px;
+
+$timeline-list-item__title__font-color--hover: $accent-color;
+$timeline-list-item__point-color--hover: $timeline-list-item__title__font-color--hover;
+$timeline-list-item__point-border-width--hover: 4px;
 
 //Particles-js
 $particles-js__background-color: $main-color;

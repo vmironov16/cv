@@ -1,22 +1,21 @@
-#skills
-{
-    .skills-list
-    {
-        h3
-        {
-            text-align: center;
-            @media only screen and (min-width:$cut)
-            {
-                text-align: left;
+#skills {
+    .skills-list {
+        .skills-list-item {
+            .skill-list-item__title {
+                text-align: center;
+
+                @media only screen and (min-width: $cut) {
+                    text-align: left;
+                }
             }
-        }
-        .icon
-        {
-            font-size: 75px;
 
-            display: inline-block;
+            .icon {
+                font-size: 75px;
 
-            margin: 0 40px 20px 0;
+                display: inline-block;
+
+                margin: 0 40px 20px 0;
+            }
         }
     }
 }
