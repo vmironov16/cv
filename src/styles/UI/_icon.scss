@@ -1,0 +1,11 @@
+.icon {
+    color: $icon__font-color;
+
+    &:hover {
+        color: $icon__font-color--hover;
+    }
+
+    &:active {
+        color: $icon__font-color--active;
+    }
+}

@@ -1,5 +1,4 @@
-.footer
-{
+.footer {
     margin: $footer__margin;
     padding: $footer__padding;
 
@@ -8,14 +7,9 @@
     color: $footer__font-color;
     background: $footer__background-color;
 
-    &-icons
-    {
-        .social-icons
-        {
-            a
-            {
-                font-size: $footer__icon__font-size;
-
+    &-icons {
+        .social-icons {
+            a {
                 display: inline-block;
 
                 margin-right: $footer__icon__margin-right;
@@ -25,33 +19,38 @@
                 vertical-align: middle;
                 text-decoration: none;
 
-                color: $footer__icon__font-color;
-                .icon
-                {
+
+                .icon {
+                      transition: 100ms;
+                    font-size: $footer__icon__font-size;
+
                     display: block;
+
+                    color: $footer__icon__font-color;
                 }
 
-                &:hover
-                {
-                    font-size: 35px;
-
+                &:hover {
                     margin-right: 6px;
                     padding: 0;
 
-                    color: $footer__icon__font-color--hover;
+                    .icon {
+                        font-size: 35px;
+
+                        color: $footer__icon__font-color--hover;
+                    }
                 }
 
-                &:active
-                {
-                    color: $footer__icon__font-color--active;
+                &:active {
+                    .icon {
+                        color: $footer__icon__font-color--active;
+                    }
                 }
             }
         }
     }
 
 
-    p
-    {
+    p {
         margin-top: 0;
     }
 }
